@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Hotel Bright">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotell</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="grid.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+
+
+</head>
+
+<body>
+    <header>
+        <img id="logo" src="img/hotell_logo_smol.webp" alt="Hotell Logo" />
+        <img id="pool" src="img/hotell_pool_smol.webp" alt="Hotell Pool">
+    </header>
+    <nav class="topnav" id="myTopnav">
+        <a href="index.html">Start</a>
+        <a href="boka.html">Boka</a>
+        <a href="hitta.html">Hitta</a>
+        <a href="kontakta.html" class="active">Kontakta</a>
+        <a href="javascript:void(0);" style="font-size: 15px;" class="icon" onclick="myFunction()">&#9776;</a>
+    </nav>
+    <section>
+        <div class="container">
+            <form action="tack.html">
+                <div class="row">
+                    <div class="col-25">
+                        <label for="fname">Förnamn</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="fname" name="firstname" placeholder="Ditt förnamn..">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="lname">Efternamn</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="lname" name="lastname" placeholder="Ditt efternamn..">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="country">Land</label>
+                    </div>
+                    <div class="col-75">
+                        <select id="country" name="country">
+                            <option value="sverige">Sverige</option>
+                            <option value="canada">Canada</option>
+                            <option value="usa">USA</option>
+                            <option value="other">Övrigt</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="email">Email</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="email" name="email" placeholder="Din email..">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="phone">Telefonnummer</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="phone" name="phone" placeholder="Ditt telefonnummer..">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="subject">Meddelande</label>
+                    </div>
+                    <div class="col-75">
+                        <textarea id="subject" name="subject" placeholder="Skriv ditt meddelande här..."
+                            style="height:200px"></textarea>
+                    </div>
+                </div>
+                <div class="row">
+                    <input type="submit" value="Skicka">
+                </div>
+            </form>
+        </div>
+
+    </section>
+
+    <aside>
+        <ul>
+            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eu vehicula ligula, vel rutrum neque.
+                Etiam
+                sed</li>
+
+            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eu vehicula ligula, vel rutrum neque.
+                Etiam
+                sed</li>
+        </ul>
+    </aside>
+    <footer>
+        Hotell Bright | Storgatan 1 | 123 45 Storstad | 012 - 12 34 56
+    </footer>
+    <script src="script-nav.js"></script>
+</body>
+
+</html>
